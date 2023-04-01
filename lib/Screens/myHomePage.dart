@@ -9,8 +9,8 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.green,
-        title: const Text("Meu app"),
+        backgroundColor: const Color(0xFF012505),
+        title: const Text("Filmex"),
         actions: [
           SizedBox(
             width: 100,
@@ -36,17 +36,20 @@ class MyHomePage extends StatelessWidget {
             decoration: const BoxDecoration(
               image: DecorationImage(
                 image: NetworkImage(
-                    "https://br.web.img3.acsta.net/pictures/22/05/30/15/56/1469166.jpg"),
+                    "https://assets.b9.com.br/wp-content/uploads/2016/10/netflix-catalogo.jpg"),
+                fit: BoxFit.cover,
               ),
             ),
           ),
           const Positioned(
             top: 100.0,
             left: 20.0,
+            width: 380,
             child: Text(
               'Explore o mundo de Filmes e Séries aqui!!!',
+              softWrap: true,
               style: TextStyle(
-                fontSize: 30.0,
+                fontSize: 24.0,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
               ),
@@ -55,8 +58,10 @@ class MyHomePage extends StatelessWidget {
           const Positioned(
             top: 140.0,
             left: 20.0,
+            width: 380,
             child: Text(
-              '\n\nOs maiores lançamentos aqui em primeira mão',
+              '\n\n\n\nOs maiores lançamentos aqui em primeira mão',
+              softWrap: true,
               style: TextStyle(
                 fontSize: 16.0,
                 color: Colors.white,
